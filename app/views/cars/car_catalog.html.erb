@@ -1,7 +1,8 @@
 <h1>Welcome to the Dealership!</h1>
 <h2>Car Catalog</h2>
 <% @cars.each do |car|%>
-<h4><%=car.make%> <%=car.model%></h4>
-
+<h4 class="Car"><%=car.make%> <%=car.model%></h4>
+<img class= "Image"src= <%=car.image%>>
+<p class="Price">Price: <%=car.price%></p>
 
 <%end%>
